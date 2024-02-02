@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+    <html>
+
+    <head>
+
+
+        <title>
+
+        </title>
+
+    </head>
+    <body>
+        <p id="text"> Hello World</p>
+
+        <button onClick="alert('Hi!')">Click Me!</button> 
+
+        <button id="myButton">Change text</button>
+
+        <p id="secondParagraph"> Javascript is....</p>
+        <button id="changeSecondPara">Change second Paragraph</button>
+
+        <p id="emptyText"></p>
+        <button id="jaadu">New Text</button>
+
+        <p id="moreText">This is some text</p>
+        <button id="styleText">style the text</button>
+
+        <script type="text/javascript">
+
+            document.getElementById("myButton").onclick= function(){
+                alert("Button Clicked");
+                document.getElementById("text").innerHTML = "Raam Raam";
+            }
+
+            document.getElementById("changeSecondPara").onclick=function(){
+                alert("button prressed")
+                document.getElementById("secondParagraph").innerHTML="I think" + document.getElementById("secondParagraph").innerHTML+"awesome!";
+            }
+
+            document.getElementById("jaadu").onclick=function(){
+                document.getElementById("emptyText").innerHTML+="<h1>New Text appeared after pressing the button</h1>";
+                //or simply document.getElementById("emptyText").innerHTML="new text appeared after pressing button"
+            }
+
+            document.getElementById("styleText").onclick=function(){
+                document.getElementById("moreText").style.fontSize="50px";
+            }
+            document.getElementById("text").innerHTML = "Hello Nikhil";
+
+            
+
+            alert('Page is loaded!');// We can use double or single quotes here as there are no outer quotes // Semi colon is optional but we should have a habit to put them
+
+        </script>
+    </body>
+
+</html>

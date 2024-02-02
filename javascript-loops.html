@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+
+    <body>
+        <p id="string">tweets will display here</p>
+        <button id="changeTweet">change tweet</button>
+        <script type="text/Javascript">
+
+            var tweets=["0th string","1st string","2nd strong","3rd string"];
+
+            document.getElementById("changeTweet").onclick=function(){
+                for(var i=0;i<tweets.length;i++){
+                document.getElementById("string").innerHTML=tweets[i];
+                alert("tweet changed");
+            }
+            }
+           
+
+
+
+        </script>
+    </body>
+</html>
